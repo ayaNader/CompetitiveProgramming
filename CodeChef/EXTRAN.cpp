@@ -1,3 +1,9 @@
+/*
+   idea:
+   - first thought of checking each two next to each other..but it wouldn't have been enough to decide which is the different number
+   - so i started checking every three consectutive numbers and the result is the number to the left/right whose 
+   difference with the middle number is more than 1 or equal 0
+*/
 #include <bits/stdc++.h>
  
 using namespace std;
