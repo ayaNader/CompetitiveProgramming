@@ -1,3 +1,8 @@
+/* 
+   idea:
+   - very simple implementation
+*/
+
 #include <bits/stdc++.h>
  
 using namespace std;
