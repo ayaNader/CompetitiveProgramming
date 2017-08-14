@@ -1,6 +1,6 @@
 /* 
    idea:
-   - very simple implementation
+   - very simple brute force just trying both possible cases
 */
 
 #include <bits/stdc++.h>
