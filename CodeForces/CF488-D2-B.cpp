@@ -33,16 +33,6 @@ int main()
 	ll k;
 	int x,y;
 	while(cin>>n>>m>>k>>x>>y){
-		/*if(k<m){
-			cout<<"1 0 ";
-			if(y<=k)cout<<1<<endl;
-			else cout<<0<<endl;
-			continue;
-		}
-		else if(k==m){
-			cout<<"1 1 1"<<endl;
-			continue;
-		}*/
 		x--;
 		ll rnds=k/m;
 		ll cycl=rnds/(n>2?2*n-2:n);
