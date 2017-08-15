@@ -24,32 +24,27 @@ const double PI=3.14159265;
 int main()
 {
 	ios::sync_with_stdio(false);
-	string s;
-	while(cin>>s){
-		vector<char>v1(s.length()),v2(s.length());
-		rep(i,0,s.length())v1[i]=v2[i]=s[i];
+	string s1;
+	while(cin>>s1){
+		string s2=s1;
 		vector<string>v;
-		v.push_back(s);
+		v.push_back(s1);
 		int cnt=0;
 		do
 		{
 			if(!cnt){cnt++;continue;}
-			string tmp="";
-			rep(i,0,v1.size())tmp+=v1[i];
-			v.push_back(tmp);
+			v.push_back(s1);
 			if(cnt==10)break;
 			cnt++;
-		}while(next_permutation(all(v1)));
+		}while(next_permutation(all(s1)));
 		cnt=0;
 		do
 		{
 			if(!cnt){cnt++;continue;}
-			string tmp="";
-			rep(i,0,v2.size())tmp+=v2[i];
-			v.push_back(tmp);
+			v.push_back(s2);
 			if(cnt==10)break;
 			cnt++;
-		}while(prev_permutation(all(v2)));
+		}while(prev_permutation(all(s2)));
 		sort(all(v));
 		int mx=-1;
 		string ans;
