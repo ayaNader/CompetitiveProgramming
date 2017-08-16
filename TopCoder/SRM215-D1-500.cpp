@@ -1,3 +1,13 @@
+/*
+    idea:
+    - using trie i store all strings with the end of each string being a set of all the id's having this word
+    - the id represents the entry number
+    - each time i search/insert a word i return the set of ids of that word
+    - i count the number of times each id occurs with the different words so as to check the number of common words between two sets
+    - using dsu i combine the sets of strings
+    - i keep repeating the process with the resulting vector of strings in case it could be merged more until the input to the function
+    and the result are the same(no further merging could be done)
+*/
 #include <vector>
 #include <list>
 #include <map>
