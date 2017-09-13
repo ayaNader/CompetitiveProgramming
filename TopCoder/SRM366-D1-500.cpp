@@ -1,3 +1,11 @@
+/*
+  idea:
+  - trying all possible combinations of guitars
+  - calculating number of songs that will be played with each combination
+  - taking all combinations with equal max number of songs
+  - taking the combination which has least number of guitars then lexicographically first
+*/
+
 #include <vector>
 #include <list>
 #include <map>
