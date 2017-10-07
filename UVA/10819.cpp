@@ -32,6 +32,6 @@ int main(){
 		memset(dp,-1,sizeof dp);
 		for(int i=0;i<n;i++)
 			cin>>p[i]>>f[i];
-		cerr<<go(0,0)<<endl;
+		cout<<go(0,0)<<endl;
 	}
 }
